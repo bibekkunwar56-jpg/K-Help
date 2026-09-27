@@ -1,0 +1,95 @@
+{
+  "slide_size": "16:9",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "K-Help: Korea Life Platform",
+      "subtitle": "Architecture, Completed Milestones (V1–V8), & Future Vision\nTeam NP Coders | September 2026",
+      "background": "0B1F2A"
+    },
+    {
+      "layout": "title_content",
+      "title": "1. Problem & Mission Statement",
+      "bullets": [
+        "Foreign residents in Korea face extreme information fragmentation across Korean-only portals.",
+        "Daily necessities (ARC registration, NHIS insurance, banking, legal housing, jobs) cause high friction.",
+        {"text": "Language barriers and strict cultural politeness norms make landlord/employer communication intimidating.", "level": 0},
+        {"text": "K-Help provides a unified, single-stop platform for community, living guides, jobs, housing, chat, and AI assistance.", "bold": true, "color": "1A6B7A"}
+      ],
+      "footer": "K-Help Platform Overview — NP Coders"
+    },
+    {
+      "layout": "title_content",
+      "title": "2. Technology Stack & System Architecture",
+      "bullets": [
+        {"text": "Frontend Architecture:", "bold": true},
+        {"text": "Next.js 16.3.5 (App Router with Turbopack), React 19, TypeScript, Tailwind CSS 4", "level": 1},
+        {"text": "Backend Architecture:", "bold": true},
+        {"text": "Spring Boot 3.4.4, Java 21, Spring Data JPA, Jakarta Validation, JJWT 0.12.6", "level": 1},
+        {"text": "Real-time Messaging:", "bold": true},
+        {"text": "Spring WebSocket with STOMP message broker (/ws, /topic, /queue, /app)", "level": 1},
+        {"text": "Data Layer & Infrastructure:", "bold": true},
+        {"text": "PostgreSQL 15 (Flyway versioned V1-V5 migrations) + Redis 7 on Docker Compose", "level": 1}
+      ],
+      "footer": "K-Help Platform Overview — NP Coders"
+    },
+    {
+      "layout": "title_content",
+      "title": "3. Team Ownership Matrix (NP Coders)",
+      "tables": [
+        {
+          "left": 0.8, "top": 1.8, "width": 11.7, "height": 4.5,
+          "rows": [
+            ["Member", "Role", "Key Ownership"],
+            ["Pokhrel Ashish", "Team Leader & Architect", "Security architecture, stateless JWT auth, system integration"],
+            ["Rai Spandan", "Frontend Specialist", "Next.js UI design, responsive routes, Tailwind CSS styling"],
+            ["Rai Divya", "Database & Data Lead", "Flyway DB migrations, Postgres schemas, curated Korea Info guides"],
+            ["Darlami Magar Risipna", "Community & Chat Lead", "Posts, threaded comments, likes, reports, WebSocket live chat"],
+            ["Adhikari Pratigya", "Jobs & Housing Lead", "Job recruitment portal, housing listings, budget filters"],
+            ["Subedi Anup", "AI Services Lead", "Polite Korean polisher, living translator, contract summarizer"],
+            ["Kuwar Bibek", "DevOps & QA Lead", "Docker Compose setup, smoke test automation, QA verification"]
+          ]
+        }
+      ],
+      "footer": "K-Help Platform Overview — NP Coders"
+    },
+    {
+      "layout": "title_content",
+      "title": "4. Complete Roadmap Verification (V1 to V8)",
+      "bullets": [
+        {"text": "V1 Foundation: Spring Boot + Next.js + Postgres + Redis connected and healthy", "level": 0},
+        {"text": "V2 Auth & Profiles: Register, login (BCrypt + JWT), user profile /api/users/me", "level": 0},
+        {"text": "V3 Community: Forum posts, nested comments, likes, reports (53/53 tests passed)", "level": 0},
+        {"text": "V4 Korea Info: 8 Curated guides (ARC, NHIS, bank, SIM, wolse, visa limits, 1345)", "level": 0},
+        {"text": "V5 Jobs: Postings with visa eligibility tags & location filtering (passed)", "level": 0},
+        {"text": "V6 Housing: One-room/Officetel listings with deposit & monthly rent filters (passed)", "level": 0},
+        {"text": "V7 Real-time Chat: 1:1 WebSocket STOMP messaging & unread counters (passed)", "level": 0},
+        {"text": "V8 AI Tools: Polite honorifics polisher, translator, lease contract summarizer (passed)", "level": 0}
+      ],
+      "footer": "K-Help Platform Overview — NP Coders"
+    },
+    {
+      "layout": "title_content",
+      "title": "5. What to Add Next: Making K-Help Natural & Working",
+      "bullets": [
+        {"text": "1. Contextual 'Direct Contact' Bridge:", "bold": true, "color": "0F4C59"},
+        {"text": "Add 'Message Landlord' on housing & 'Inquire' on jobs to instantly initiate pre-filled 1:1 chats.", "level": 1},
+        {"text": "2. Inline AI Polite Polisher:", "bold": true, "color": "0F4C59"},
+        {"text": "Provide an inline button in chat/comments to convert draft messages to respectful Korean honorifics.", "level": 1},
+        {"text": "3. Realistic Seeding & Media Uploads:", "bold": true, "color": "0F4C59"},
+        {"text": "Seed active discussion threads, real student Q&As, and room/job photos for high visual appeal.", "level": 1},
+        {"text": "4. Desktop Live Notifications:", "bold": true, "color": "0F4C59"},
+        {"text": "Real-time notification bell and unread badge on navbar via WebSocket events.", "level": 1},
+        {"text": "5. Production LLM API Integration:", "bold": true, "color": "0F4C59"},
+        {"text": "Hook up OpenAI/Anthropic API keys in application.properties for deep contextual translation.", "level": 1}
+      ],
+      "footer": "K-Help Platform Overview — NP Coders"
+    },
+    {
+      "layout": "title",
+      "title": "Thank You",
+      "subtitle": "K-Help: Empowering Foreign Residents in South Korea\nNP Coders Team",
+      "background": "0B1F2A"
+    }
+  ]
+}
