@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:15
+    container_name: khelp-postgres
+    environment:
+      POSTGRES_USER: khelp_admin
+      POSTGRES_PASSWORD: khelp_password
+      POSTGRES_DB: khelp_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - khelp_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U khelp_admin -d khelp_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7
+    container_name: khelp-redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  khelp_pgdata:

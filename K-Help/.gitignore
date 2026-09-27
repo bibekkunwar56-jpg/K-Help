@@ -1,0 +1,15 @@
+# Root
+.DS_Store
+*.log
+.env
+.env.*
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Backend
+backend/target/
+backend/.idea/
+*.iml
