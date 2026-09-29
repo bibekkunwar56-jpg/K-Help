@@ -179,6 +179,13 @@ export default function AiToolsPage() {
                 <option value="ne">Nepali (नेपाली)</option>
                 <option value="vi">Vietnamese (Tiếng Việt)</option>
                 <option value="zh">Chinese (中文)</option>
+                <option value="ja">Japanese (日本語)</option>
+                <option value="uz">Uzbek (Oʻzbek)</option>
+                <option value="ru">Russian (Русский)</option>
+                <option value="th">Thai (ไทย)</option>
+                <option value="mn">Mongolian (Монгол)</option>
+                <option value="id">Indonesian (Bahasa Indonesia)</option>
+                <option value="tl">Tagalog / Filipino</option>
               </select>
               <button
                 onClick={handleTranslate}
