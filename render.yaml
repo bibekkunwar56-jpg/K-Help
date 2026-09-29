@@ -1,12 +1,11 @@
-services:
-  # 1. Managed PostgreSQL Database
-  - type: pg
-    name: khelp-db
+databases:
+  - name: khelp-db
     databaseName: khelp_db
     user: khelp_admin
     plan: free
 
-  # 2. Spring Boot Backend API
+services:
+  # 1. Spring Boot Backend API
   - type: web
     name: khelp-backend
     runtime: docker
@@ -25,7 +24,7 @@ services:
       - key: SERVER_PORT
         value: 8080
 
-  # 3. Next.js Frontend
+  # 2. Next.js Frontend
   - type: web
     name: khelp-frontend
     runtime: node
